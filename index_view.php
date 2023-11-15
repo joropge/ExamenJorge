@@ -13,7 +13,6 @@
     require("bebida.php");
     require("pizza.php");
 
-        // Array con los artículos existentes
 $articulos = [
     new Articulo("Lasagna", 3.50, 7.00, 20),
     new Articulo("Pan de ajo y mozzarella", 2.00, 4.50, 15),
@@ -27,7 +26,6 @@ $articulos = [
 
 
 function otros($articulos) {
-//     echo "<h1>Nuestro menú</h1>";
     
     foreach ($articulos as $articulo) {
         if ($articulo instanceof Pizza) {
@@ -46,7 +44,7 @@ function otros($articulos) {
 }
 
 
-//3: Imprimir los artículos por tipo
+//1: Imprimir los artículos por tipo
 echo "<h1>Nuestro menú</h1>";
 echo "<h2>Pizzas</h2>";
 foreach ($articulos as $articulo) {
